@@ -1,0 +1,55 @@
+{
+  "name": "@shoppexio/sdk",
+  "version": "0.1.0",
+  "description": "Official JavaScript/TypeScript SDK for the Shoppex Developer API",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShoppexIO/sdk-js.git"
+  },
+  "homepage": "https://docs.shoppex.io/api-reference/sdks",
+  "bugs": {
+    "url": "https://github.com/ShoppexIO/sdk-js/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "examples"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "biome lint src",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "shoppex",
+    "sdk",
+    "developer-api",
+    "typescript",
+    "javascript"
+  ],
+  "author": "Shoppex",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "vitest": "^4.1.0"
+  }
+}
