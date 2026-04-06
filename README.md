@@ -2,7 +2,7 @@
 
 Official JavaScript/TypeScript SDK for the Shoppex Developer API.
 
-This SDK wraps the Shoppex `/dev/v1/*` API with a simple client surface for backend integrations and internal tools.
+This SDK wraps the Shoppex `/dev/v1/*` API with a typed client surface for backend integrations, internal tools, and OAuth app installs.
 
 ## Install
 
@@ -41,10 +41,14 @@ Use one of these:
 - `coupons`
 - `webhooks`
 
-## Status
+This covers the main commerce and ops flows out of the box:
 
-This SDK is in early public MVP stage.
-The core client is stable enough for first integrations, but the public surface will still expand.
+- product reads and writes
+- order creation, completion, fulfillment, and refunds
+- customer reads and writes
+- payment and invoice workflows
+- coupon validation and management
+- webhook management and delivery logs
 
 ## Docs
 
